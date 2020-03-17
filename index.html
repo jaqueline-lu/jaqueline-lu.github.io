@@ -63,9 +63,8 @@
 			<nav id="colorlib-main-menu" role="navigation" class="navbar">
 				<div id="navbar" class="collapse">
 					<ul>
-						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+						<li><a class="active"><a href="#" data-nav-section="home">Home</a></li>
 						<li><a href="#" data-nav-section="about">About</a></li>
-						<li><a href="#" data-nav-section="education">Education</a></li>
 						<li><a href="#" data-nav-section="experience">Experience</a></li>
 						<li><a href="#" data-nav-section="services">Projects</a></li>
 						<li><a href="#" data-nav-section="skills">Skills</a></li>
@@ -92,22 +91,22 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			<section id="colorlib-hero" class="js-fullheight" data-section="home">
 				<div class="flexslider js-fullheight">
 					<ul class="slides">
-				   	<li style="background-image: url(images/background.jpg);">
+				   	<li style="background-image: url(images/background3.jpg);">
 				   		<div class="overlay"></div>
 				   		<div class="container-fluid">
 				   			<div class="row">
 					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
 					   				<div class="slider-text-inner js-fullheight">
 					   					<div class="desc">
-						   					<h1>Hi! <br>I am actively looking for internship or jobs</h1>
-												<p><a href="https://drive.google.com/drive/u/0/my-drive" target="_blank">Download CV <i class="icon-download4"></i></a></p>
+						   					<h1>Hi! <br>I am actively looking for internships or jobs</h1>
+												<p><a href="images/resume0317.png" download>Download CV</a><i class="icon-download4"></i></p>
 											</div>
 					   				</div>
 					   			</div>
 					   		</div>
 				   		</div>
 				   	</li>
-				   	<li style="background-image: url(images/background2.jpg);">
+				   	<li style="background-image: url(images/background4.jpg);">
 				   		<div class="overlay"></div>
 				   		<div class="container-fluid">
 				   			<div class="row">
@@ -135,9 +134,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									<div class="about-desc">
 										<span class="heading-meta">About Me</span>
 										<h2 class="colorlib-heading">Who Am I?</h2>
-										<p><strong>Hi I'm Jaqueline Lu</strong> I am studying <strong>Computer Science in University of California, Los Angeles (UCLA) </strong> with a focus of data science and machine learning.</p>
-										<p>I fell in love with data science and machine learning because I believe machines and technologies are the future we are pacing towards.With data at hand, I am able to look deeply into our society and human behaviors, and protect or prevent them.</p>
-									
+										<p><strong>Hi I'm Jaqueline Lu. I am studying Computer Science in University of California, Los Angeles (UCLA) with a focus of data science and machine learning.</strong></p>
+										<p>I fell in love with data as I believe machines and technologies are the future we are pacing towards.With data at hand, I am able to look deeply into our society and human behaviors, and protect or prevent them.</p>
+										<p>Starting from 2020, since the COVID-19 broke out, I have also joined the 'Wuhan2020' team to collect data from hospitals, resources and "help" messages sent from those in Wuhan, then used data visualization to showcase the severity of the disease. </p>
 										<p>In my spare time, I like reading books, watching Sci-Fi movies, singing and travelling.</p>
 									</div>
 								</div>
@@ -217,18 +216,19 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				         <div class="timeline-centered">
 				         	<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
 					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-1">
+					               <div class="timeline-icon color-3">
 					                  <i class="icon-pen2"></i>
 					               </div>
 
 					               <div class="timeline-label">
-					               	  <h2><a href="#">Categorical Feature Challenge II</a> <span>Winter 2020</span></h2>
+					               	  <h2><a href="#">Categorical Feature Encoding Challenge II</a> <span>Winter 2020</span></h2>
 					               	  <p>Datasets from: <a href="https://www.kaggle.com/c/cat-in-the-dat-ii" target="_blank">Kaggle</a></p>
 					               	  <a href="https://github.com/jaqueline-lu/Categorical-Challenge-II" target="_blank">see code</a>
 					               	  <p>What I do:
 					               	  	<ul>
-					               	  		<li>The large dataset includes about 100k rows. I perform data selection and EDA based on data visiualization drawn to filter out the data that are most related, and do feature engineering (Principal Component Analysis to divide up the map of Manhattan into regions) </li>
-					               	  		<li>Perform model selection on different regression models (linear, Lasso, Ridge, SVR etc.) and make better use of the features by putting different weights</li>
+					               	  		<li>Using Tensorflow backend, I build a deep learning model for this datasets. </li>
+					               	  		<li>Since there are already too many columns, I do label encode for the features, and use Kfold validation to evaluate the models.</li>
+					               	  		<li>As a comparison, I also perform one hot encode (with more focus on the features themselves) and run catboost model on it. After tuning hyper-parameters, it also does a good job in prediction.</li>
 					               	  	</ul>
 					               	  </p>
 					               	</div>
@@ -255,7 +255,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					             </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
 					         	<div class="timeline-entry-inner">
 					               	<div class="timeline-icon color-2">
 					               		<i class="icon-pen2"></i>
@@ -366,52 +366,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
 								    <span>90%</span>
 								  	</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="colorlib-education" data-section="education">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Education</span>
-							<h2 class="colorlib-heading animate-box">Education</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<div class="fancy-collapse-panel">
-								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingTwo">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Bachelor Degree of Computer Science in Progress
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-									        <div class="panel-body">
-									            <p>University of California, Los Angeles, Computer Science major</p>
-									        </div>
-									    </div>
-									</div>
-
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingFive">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">High School Secondary Education
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-									        <div class="panel-body">
-									            <p>Los Altos High School, Hacienda Heights, CA</p>	
-									        </div>
-									    </div>
-									</div>
 								</div>
 							</div>
 						</div>
